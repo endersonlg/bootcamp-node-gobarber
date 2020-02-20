@@ -60,6 +60,12 @@ class AppointmentController {
         .status(401)
         .json({ error: 'You can only create appointments with providers' });
     }
+
+    if (req.userId === provider_id) {
+      return res
+        .status(401)
+        .json({ error: 'You cannot make a cut with yourself' });
+    }
     /**
      * Check for past dates
      */
