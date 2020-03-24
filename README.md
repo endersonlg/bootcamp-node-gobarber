@@ -1,2 +1,2 @@
 # bootcamp-node-gobaber
-gobaber - Node.js - Curso BootCamp
+gobarber - Node.js - Curso BootCamp
